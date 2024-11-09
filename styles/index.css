@@ -1,1 +1,79 @@
-/*# sourceMappingURL=index.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Colors */
+/* Primary colors */
+/* Neutral Colors */
+@font-face {
+  font-family: "DMSerifDisplay";
+  src: url("../../assets/fonts/DMSerifDisplay-Regular.ttf") format(truetype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("../../assets/fonts/Karla-Regular.ttf") format(truetype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("../../assets/fonts/Karla-Bold.ttf") format(truetype);
+  font-weight: 700;
+}
+/*Desktop typography styles*/
+/*Mobile typography styles*//*# sourceMappingURL=index.css.map */
