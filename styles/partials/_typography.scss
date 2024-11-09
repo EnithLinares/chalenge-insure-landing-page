@@ -1,0 +1,102 @@
+@use "../../styles/partials/variables" as *;
+
+@font-face {
+    font-family: "DMSerifDisplay";
+    src: url("../../assets/fonts/DMSerifDisplay-Regular.ttf") format(truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("../../assets/fonts/Karla-Regular.ttf") format(truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("../../assets/fonts/Karla-Bold.ttf") format(truetype);
+    font-weight: 700;
+}
+
+@mixin pages-text {
+    font-family: "karla", sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    height: 0.95rem;
+    color: $GrayishViolet;
+
+    &:hover {
+        color: $VDarkViolet;
+        cursor: pointer;
+    }
+}
+
+@mixin header-text {
+    font-family: "DMSerifDisplay", sans-serif;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 4rem;
+}
+
+@mixin subheader-text {
+    font-family: "DMSerifDisplay", sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2.4619rem;
+    color: $DarkViolet;
+}
+
+@mixin body-text {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: $GrayishViolet;
+}
+
+@mixin button-text-white {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 0.95rem;
+    color: $VDarkViolet;
+
+    &:hover {
+        color: $LightGray;
+        cursor: pointer;
+    }
+}
+
+@mixin button-text-violet {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 0.95rem;
+    color: $LightGray;
+
+    &:hover {
+        color: $VDarkViolet;
+        cursor: pointer;
+    }
+}
+
+@mixin footer-heading {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 0.95rem;
+    color: $LightGray;
+}
+
+@mixin links-text {
+    font-family: "karla", sans-serif;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 0.95rem;
+    color: $DarkViolet;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
