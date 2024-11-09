@@ -18,11 +18,13 @@
     font-weight: 700;
 }
 
+/*Desktop typography styles*/
+
 @mixin pages-text {
     font-family: "karla", sans-serif;
     font-size: 0.8125rem;
     font-weight: 700;
-    height: 0.95rem;
+    line-height: 0.95rem;
     color: $GrayishViolet;
 
     &:hover {
@@ -99,4 +101,26 @@
         text-decoration: underline;
         cursor: pointer;
     }
+}
+
+/*Mobile typography styles*/
+
+@mixin pages-text-mobile {
+    font-family: "karla", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: $LightGray;
+
+    &:hover {
+        color: $VDarkViolet;
+        cursor: pointer;
+    }
+}
+
+@mixin header-text-mobile {
+    font-family: "DMSerifDisplay", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3rem;
 }
