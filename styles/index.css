@@ -81,7 +81,7 @@ h6 {
   display: flex;
   padding: 1rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   position: relative;
   background-color: white;
 }
@@ -92,6 +92,7 @@ h6 {
 }
 .nav__logo {
   height: 1.125rem;
+  padding: 0 1rem;
 }
 .nav__desktop {
   display: flex;
@@ -104,13 +105,15 @@ h6 {
   line-height: 0.95rem;
   color: hsl(273, 4%, 51%);
   list-style: none;
+  text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 .nav__desktop--page:hover, .nav__desktop--link:hover {
   color: hsl(270, 9%, 17%);
   cursor: pointer;
 }
-.nav__desktop--cta {
+.nav__desktop--button {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   font-size: 0.8125rem;
@@ -121,11 +124,11 @@ h6 {
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.nav__desktop--cta:hover {
+.nav__desktop--button:hover {
   color: hsl(0, 0%, 98%);
   cursor: pointer;
 }
-.nav__desktop--cta:hover {
+.nav__desktop--button:hover {
   background-color: hsl(270, 9%, 17%);
 }
 @media screen and (max-width: 768px) {
@@ -200,6 +203,11 @@ h6 {
     background-color: hsl(0, 0%, 98%);
     color: hsl(256, 26%, 20%);
     text-decoration: none;
+  }
+  .nav__mobile--bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 .nav__mobile--hamburger {
