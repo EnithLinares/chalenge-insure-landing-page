@@ -113,7 +113,7 @@
     color: $LightGray;
 
     &:hover {
-        color: $VDarkViolet;
+        text-decoration: underline;
         cursor: pointer;
     }
 }
