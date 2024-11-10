@@ -1,3 +1,114 @@
 @use "../styles/partials/resets" as *;
 @use "../styles/partials/variables" as *;
 @use "../styles/partials/typography" as *;
+@use "../styles/partials/mixins" as *;
+
+.nav {
+    display: flex;
+    padding: 1rem 6rem;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        height: 1.125rem;
+    }
+
+    &__desktop {
+        display: flex;
+        gap: 2rem;
+
+        &--page {
+            @include pages-text;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        &--link {
+            @extend .nav__desktop--page;
+        }
+
+        &--cta {
+            @include white-button;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $DarkViolet;
+            z-index: 999;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+
+            &--page {
+                @include pages-text-mobile;
+                list-style: none;
+                gap: 1rem;
+            }
+
+            &--link {
+                text-decoration: none;
+                color: $LightGray;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &--cta {
+                @include violet-button;
+            }
+        }
+
+        &--hamburger {
+            display: none;
+
+            @include mobile {
+                display: block;
+                top: 1rem;
+                right: 1rem;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                z-index: 1000;
+            }
+        }
+
+        &--menu {
+            height: 2rem;
+        }
+
+        &--close {
+            height: 2rem;
+            display: none;
+        }
+    }
+
+    &.active {
+        .nav__mobile {
+            transform: translateY(0);
+
+            .nav__mobile--menu {
+                display: none;
+            }
+
+            .nav__mobile--close {
+                display: block;
+            }
+        }
+    }
+}
