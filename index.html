@@ -29,53 +29,33 @@
     </head>
     <body>
         <nav class="nav">
-            <a href="#">
-                <img
-                    src="/assets/images/logo.svg"
-                    alt="insure logo"
-                    class="nav__logo"
-                />
-            </a>
-            <ul class="nav__desktop">
-                <li class="nav__desktop--page">
-                    <a href="#" class="nav__desktop--link">How we work</a>
-                </li>
-                <li class="nav__desktop--page">
-                    <a href="#" class="nav__desktop--link">Blog</a>
-                </li>
-                <li class="nav__desktop--page">
-                    <a href="#" class="nav__desktop--link">Account</a>
-                </li>
-                <li class="nav__desktop--page">
-                    <a href="#" class="nav__desktop--cta">View plans</a>
-                </li>
-            </ul>
-            <button class="nav__mobile--hamburger">
-                <img
-                    src="/assets/images/icon-hamburger.svg"
-                    alt="menu icon"
-                    class="nav__mobile--menu"
-                />
-                <img
-                    src="/assets/images/icon-close.svg"
-                    alt="close icon"
-                    class="nav__mobile--close"
-                />
+            <img
+                src="./assets/images/logo.svg"
+                alt="Insure logo"
+                class="nav__logo"
+            />
+
+            <!-- Desktop Navigation -->
+            <div class="nav__desktop">
+                <a href="#" class="nav__desktop--link">How we work</a>
+                <a href="#" class="nav__desktop--link">Blog</a>
+                <a href="#" class="nav__desktop--link">Account</a>
+                <a href="#" class="nav__desktop--cta">View plans</a>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <button class="nav__mobile--hamburger" id="menuToggle">
+                <img src="./assets/images/icon-hamburger.svg" alt="Menu" class="nav__mobile--menu">
+                <img src="./assets/images/icon-close.svg" alt="Close" class="nav__mobile--close">
             </button>
-            <ul class="nav__mobile">
-                <li class="nav__mobile--page">
-                    <a href="#" class="nav__mobile--link">How we work</a>
-                </li>
-                <li class="nav__mobile--page">
-                    <a href="#" class="nav__mobile--link">Blog</a>
-                </li>
-                <li class="nav__mobile--page">
-                    <a href="#" class="nav__mobile--link">Account</a>
-                </li>
-                <li class="nav__mobile--page">
-                    <a href="#" class="nav__mobile--cta">View plans</a>
-                </li>
-            </ul>
+            
+            <div class="nav__mobile">
+                <a href="#" class="nav__mobile--link">HOW WE WORK</a>
+                <a href="#" class="nav__mobile--link">BLOG</a>
+                <a href="#" class="nav__mobile--link">ACCOUNT</a>
+                <a href="#" class="nav__mobile--cta">VIEW PLANS</a>
+            </div>
+            </nav>
         </nav>
         Humanizing your insurance. Get your life insurance coverage easier and
         faster. We blend our expertise and technology to help you find the plan

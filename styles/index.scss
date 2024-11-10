@@ -5,9 +5,15 @@
 
 .nav {
     display: flex;
-    padding: 1rem 6rem;
+    padding: 1rem;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    background-color: white;
+
+    @include mobile {
+        padding: 1.5rem;
+    }
 
     &__logo {
         height: 1.125rem;
@@ -40,68 +46,65 @@
         display: none;
 
         @include mobile {
-            display: flex;
+            display: none;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            gap: 2rem;
             position: fixed;
-            top: 0;
-            right: 0;
+            top: 4rem;
+            left: 0;
             width: 100%;
-            height: 100%;
+            height: calc(100vh - 4rem);
             background-color: $DarkViolet;
-            z-index: 999;
-            transform: translateY(-100%);
-            transition: transform 0.3s ease-in-out;
+            padding: 2.5rem;
+            z-index: 998;
 
-            &--page {
+            &--pages {
                 @include pages-text-mobile;
-                list-style: none;
-                gap: 1rem;
-            }
-
-            &--link {
                 text-decoration: none;
-                color: $LightGray;
+                text-transform: uppercase;
 
                 &:hover {
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
             }
 
+            &--link {
+                @include pages-text-mobile;
+                text-decoration: none;
+            }
+
             &--cta {
-                @include violet-button;
+                @include mobile-button;
+                width: 100%;
+                text-align: center;
             }
         }
+    }
 
-        &--hamburger {
-            display: none;
+    &__mobile--hamburger {
+        display: none;
 
-            @include mobile {
-                display: block;
-                top: 1rem;
-                right: 1rem;
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-                z-index: 1000;
+        @include mobile {
+            display: block;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 999;
+            padding: 0;
+
+            .nav__mobile--close {
+                display: none;
             }
-        }
-
-        &--menu {
-            height: 2rem;
-        }
-
-        &--close {
-            height: 2rem;
-            display: none;
         }
     }
 
     &.active {
         .nav__mobile {
-            transform: translateY(0);
+            display: flex;
+        }
 
+        .nav__mobile--hamburger {
             .nav__mobile--menu {
                 display: none;
             }

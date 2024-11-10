@@ -18,14 +18,16 @@
     }
 }
 
-@mixin violet-button {
-    @include button-text-violet;
+@mixin mobile-button {
+    @include pages-text-mobile;
     border: 1.5px solid $LightGray;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
         background-color: $LightGray;
+        color: $DarkViolet;
+        text-decoration: none;
     }
 }
