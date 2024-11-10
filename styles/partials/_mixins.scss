@@ -1,0 +1,31 @@
+@use "./typography" as *;
+@use "./variables" as *;
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin white-button {
+    @include button-text-white;
+    border: 1.5px solid $VDarkViolet;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $VDarkViolet;
+    }
+}
+
+@mixin violet-button {
+    @include button-text-violet;
+    border: 1.5px solid $LightGray;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $LightGray;
+    }
+}
