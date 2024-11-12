@@ -11,6 +11,7 @@
     border: 1.5px solid $VDarkViolet;
     padding: 0.5rem 1rem;
     text-decoration: none;
+    text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
@@ -23,6 +24,23 @@
     border: 1.5px solid $LightGray;
     padding: 1rem 2rem;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $LightGray;
+        color: $DarkViolet;
+        text-decoration: none;
+    }
+}
+
+@mixin violet-button {
+    @include pages-text;
+    border: 1.5px solid $LightGray;
+    color: $LightGray;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    width: 9.125rem;
+    text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
