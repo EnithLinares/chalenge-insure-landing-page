@@ -5,11 +5,12 @@
 
 .nav {
     display: flex;
-    padding: 1rem;
+    padding: 1rem 8rem;
     justify-content: space-between;
     align-items: baseline;
     position: relative;
     background-color: white;
+    z-index: 1000;
 
     @include mobile {
         padding: 1.5rem;
@@ -17,7 +18,6 @@
 
     &__logo {
         height: 1.125rem;
-        padding: 0 1rem;
     }
 
     &__desktop {
@@ -122,5 +122,62 @@
                 display: block;
             }
         }
+    }
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    height: 37.5rem;
+    background-color: $DarkViolet;
+    padding: 6rem 8rem;
+    justify-content: space-between;
+
+    &__bg {
+        &--right {
+            position: absolute;
+            top: -6.875rem;
+            right: -2rem;
+        }
+
+        &--left {
+            position: absolute;
+            bottom: -23.125rem;
+            left: 0;
+        }
+    }
+
+    &__photo {
+        margin-left: 1rem;
+        width: 33.75rem;
+        height: 40.625rem;
+    }
+
+    &__copy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__divider {
+        border-top: 1px solid $LightGray;
+        width: 9.375rem;
+    }
+
+    &__title {
+        @include header-text;
+        color: $LightGray;
+        padding: 3rem 0 2rem 0;
+        margin-right: 1rem;
+    }
+
+    &__body {
+        @include body-text;
+        color: $LightGray;
+        padding: 0 0 2rem;
+    }
+
+    &__button {
+        @include violet-button;
     }
 }
