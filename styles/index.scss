@@ -230,3 +230,11 @@
         }
     }
 }
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 8rem;
+    height: 15.625rem;
+    background-color: $DarkViolet;
+}
