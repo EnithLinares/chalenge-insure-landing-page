@@ -362,4 +362,12 @@ h6 {
   font-size: 1rem;
   line-height: 1.625rem;
   color: hsl(273, 4%, 51%);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 8rem;
+  height: 15.625rem;
+  background-color: hsl(256, 26%, 20%);
 }/*# sourceMappingURL=index.css.map */
