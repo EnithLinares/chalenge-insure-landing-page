@@ -316,7 +316,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   padding: 6rem 8rem;
-  margin-top: 10rem;
+  margin: 10rem 0 5rem;
   justify-content: space-between;
 }
 .features__intro {
@@ -338,8 +338,28 @@ h6 {
   width: 100%;
 }
 .features__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 30%;
 }
 .features__card--icon {
+  display: block;
+  height: auto;
+  width: 5.375rem;
   padding: 2rem 0;
+}
+.features__card--title {
+  font-family: "DMSerifDisplay", sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.4619rem;
+  color: hsl(256, 26%, 20%);
+}
+.features__card--copy {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: hsl(273, 4%, 51%);
 }/*# sourceMappingURL=index.css.map */
