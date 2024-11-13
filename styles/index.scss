@@ -133,6 +133,7 @@
     background-color: $DarkViolet;
     padding: 6rem 8rem;
     justify-content: space-between;
+    margin-bottom: 15rem;
 
     &__bg {
         &--right {
@@ -179,5 +180,39 @@
 
     &__button {
         @include violet-button;
+    }
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6rem 8rem;
+    margin-top: 10rem;
+    justify-content: space-between;
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &--divider {
+            border-top: 1px solid $DarkViolet;
+            width: 9.375rem;
+        }
+
+        &--header {
+            @include header-text;
+            padding: 3rem 0;
+            color: $VDarkViolet;
+            width: 100%;
+        }
+    }
+
+    &__card {
+        width: 30%;
+
+        &--icon {
+            padding: 2rem 0;
+        }
     }
 }
