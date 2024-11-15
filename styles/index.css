@@ -120,7 +120,7 @@ h6 {
   line-height: 0.95rem;
   color: hsl(270, 9%, 17%);
   border: 1.5px solid hsl(270, 9%, 17%);
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -289,18 +289,21 @@ h6 {
   padding: 0 0 2rem;
 }
 .hero__button {
-  font-family: "karla", sans-serif;
-  font-size: 0.8125rem;
+  font-family: "Karla", sans-serif;
   font-weight: 700;
+  font-size: 0.8125rem;
   line-height: 0.95rem;
-  color: hsl(273, 4%, 51%);
-  border: 1.5px solid hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 98%);
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px solid hsl(0, 0%, 98%);
   color: hsl(0, 0%, 98%);
   padding: 1rem 2rem;
   text-decoration: none;
-  width: 9.125rem;
+  width: 10rem;
   text-transform: uppercase;
   transition: background-color 0.3s ease, color 0.3s ease;
+  width: 35%;
 }
 .hero__button:hover {
   color: hsl(270, 9%, 17%);
@@ -310,12 +313,13 @@ h6 {
   background-color: hsl(0, 0%, 98%);
   color: hsl(256, 26%, 20%);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .features {
   display: flex;
   flex-wrap: wrap;
-  padding: 6rem 8rem;
+  padding: 6rem 7rem;
   margin: 10rem 0 5rem;
   justify-content: space-between;
 }
@@ -366,8 +370,57 @@ h6 {
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 2rem 8rem;
-  height: 15.625rem;
+  align-content: center;
+  padding: 6rem 5rem;
+  margin: 2rem 7rem;
+  height: 16rem;
+  position: relative;
   background-color: hsl(256, 26%, 20%);
+}
+.banner__copy {
+  font-family: "DMSerifDisplay", sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  color: hsl(0, 0%, 98%);
+  position: relative;
+  top: 9rem;
+}
+.banner__button {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 0.95rem;
+  color: hsl(0, 0%, 98%);
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px solid hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 98%);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  width: 10rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  top: 8rem;
+  width: 20%;
+  margin: 3rem 0;
+  z-index: 1000;
+}
+.banner__button:hover {
+  color: hsl(270, 9%, 17%);
+  cursor: pointer;
+}
+.banner__button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+  text-decoration: none;
+  cursor: pointer;
+}
+.banner__bg {
+  position: relative;
+  bottom: 4.5rem;
+  left: 42.2em;
 }/*# sourceMappingURL=index.css.map */
