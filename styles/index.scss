@@ -187,7 +187,7 @@
 .features {
     display: flex;
     flex-wrap: wrap;
-    padding: 6rem 7rem;
+    padding: 6rem 8rem;
     margin: 10rem 0 5rem;
     justify-content: space-between;
 
@@ -262,6 +262,37 @@
     &__bg {
         position: relative;
         bottom: 4.5rem;
-        left: 42.2em;
+        left: 66%;
+    }
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    background-color: #fafafa;
+    flex-direction: column;
+    padding: 3rem 7rem;
+    margin-top: 7rem;
+
+    &__bg {
+        position: absolute;
+        z-index: 999;
+        right: 67%;
+        top: 0;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0 2rem;
+        border-bottom: 1px solid #dadada;
+        z-index: 1000;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 9rem;
+        z-index: 1000;
     }
 }
