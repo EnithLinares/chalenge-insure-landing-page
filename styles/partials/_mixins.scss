@@ -9,7 +9,7 @@
 @mixin white-button {
     @include button-text-white;
     border: 1.5px solid $VDarkViolet;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -34,12 +34,12 @@
 }
 
 @mixin violet-button {
-    @include pages-text;
-    border: 1.5px solid $LightGray;
+    @include button-text-violet;
+    border: 2px solid $LightGray;
     color: $LightGray;
     padding: 1rem 2rem;
     text-decoration: none;
-    width: 9.125rem;
+    width: 10rem;
     text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -47,5 +47,6 @@
         background-color: $LightGray;
         color: $DarkViolet;
         text-decoration: none;
+        cursor: pointer;
     }
 }

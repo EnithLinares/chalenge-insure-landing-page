@@ -40,6 +40,13 @@
     line-height: 4rem;
 }
 
+@mixin banner-text {
+    font-family: "DMSerifDisplay", sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+
 @mixin subheader-text {
     font-family: "DMSerifDisplay", sans-serif;
     font-weight: 400;
@@ -75,6 +82,8 @@
     font-size: 0.8125rem;
     line-height: 0.95rem;
     color: $LightGray;
+    letter-spacing: 2px;
+    text-align: center;
 
     &:hover {
         color: $VDarkViolet;
