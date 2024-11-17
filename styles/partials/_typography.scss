@@ -96,7 +96,9 @@
     font-weight: 700;
     font-size: 0.8125rem;
     line-height: 0.95rem;
-    color: $LightGray;
+    color: $GrayishViolet;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 @mixin links-text {
@@ -104,6 +106,8 @@
     font-weight: 700;
     font-size: 0.8125rem;
     line-height: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: $DarkViolet;
 
     &:hover {
