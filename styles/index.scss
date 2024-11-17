@@ -247,22 +247,23 @@
         @include banner-text;
         color: $LightGray;
         position: relative;
-        top: 9rem;
+        top: 0rem;
+        width: 60%;
     }
 
     &__button {
         @include violet-button;
         position: relative;
-        top: 8rem;
+        top: 0;
         width: 20%;
         margin: 3rem 0;
         z-index: 1000;
     }
 
     &__bg {
-        position: relative;
-        bottom: 4.5rem;
-        left: 66%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 
@@ -287,6 +288,7 @@
         padding: 1rem 0 2rem;
         border-bottom: 1px solid #dadada;
         z-index: 1000;
+        margin-bottom: 3rem;
     }
 
     &__social {
@@ -294,5 +296,29 @@
         justify-content: space-between;
         width: 9rem;
         z-index: 1000;
+
+        &--icon {
+            filter: brightness(100%);
+            transition: filter 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(0) saturate(100%) invert(17%) sepia(7%)
+                    saturate(1713%) hue-rotate(224deg) brightness(93%)
+                    contrast(88%);
+            }
+        }
+    }
+
+    &__sitemap {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15rem;
+    }
+
+    &__pages {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 }
