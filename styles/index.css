@@ -85,7 +85,7 @@ body {
   display: flex;
   padding: 1rem 8rem;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   position: relative;
   background-color: white;
   z-index: 1000;
@@ -100,6 +100,7 @@ body {
 }
 .nav__desktop {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 .nav__desktop--page, .nav__desktop--link {
@@ -253,8 +254,8 @@ body {
 }
 .hero__bg--right {
   position: absolute;
-  top: -6.875rem;
-  right: -2rem;
+  top: -5rem;
+  right: -3rem;
 }
 .hero__bg--left {
   position: absolute;
@@ -263,8 +264,8 @@ body {
 }
 .hero__photo {
   margin-left: 1rem;
-  width: 33.75rem;
-  height: 40.625rem;
+  width: 33rem;
+  height: 40rem;
 }
 .hero__copy {
   display: flex;
