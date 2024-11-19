@@ -145,6 +145,10 @@
         margin-bottom: 10rem;
     }
 
+    @include mobile {
+        flex-direction: column;
+    }
+
     &__bg {
         &--right {
             position: absolute;
@@ -167,6 +171,10 @@
         @include tablet {
             width: auto;
             height: 35rem;
+        }
+
+        @include mobile {
+            display: block;
         }
     }
 

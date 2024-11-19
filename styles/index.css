@@ -264,6 +264,11 @@ body {
     margin-bottom: 10rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+}
 .hero__bg--right {
   position: absolute;
   top: -5rem;
@@ -283,6 +288,11 @@ body {
   .hero__photo {
     width: auto;
     height: 35rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__photo {
+    display: block;
   }
 }
 .hero__copy {
