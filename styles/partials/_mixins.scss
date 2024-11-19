@@ -2,10 +2,17 @@
 @use "./variables" as *;
 
 @mixin mobile {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet-break) {
         @content;
     }
 }
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-break) and (max-width: $desktop-break) {
+        @content;
+    }
+}
+
 @mixin white-button {
     @include button-text-white;
     border: 1.5px solid $VDarkViolet;
